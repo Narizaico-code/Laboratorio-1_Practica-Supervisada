@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,19 @@
 </head>
 
 <body>
-    
+    <div class="login">
+        <h1>Inicio sesión</h1>
+        <form id="loginForm">
+            <label for="username">Correo/User:</label>
+            <input type="text" id="username" name="username" required placeholder="ej.hola mundo">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="ej.123">
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <p id="message"></p>
+    </div>
 </body>
 
 </html>
