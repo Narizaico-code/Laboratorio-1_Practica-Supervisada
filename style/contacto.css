@@ -7,9 +7,16 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    cursor: pointer;
+    transition: all 0.2s ease;
     justify-content: center;
     gap: 1.5rem;
     padding: 2rem;
+}
+
+.contacto:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
 }
 
 .contactos div[id^="contacto"] {
