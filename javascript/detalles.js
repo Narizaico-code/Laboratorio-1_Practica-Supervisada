@@ -26,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="contacto-detalle">
             <img src="${imagenSrc}" alt="${contacto.imagenAlt || `Imagen de ${contacto.name} ${contacto.lastname}`}" class="imagen-detalle" onerror="this.src='../images/default-avatar.jpg'; this.alt='Imagen no disponible'">
             <div class="info-detalle">
-                <h2>${contacto.name} ${contacto.lastname}</h2>
+                <h2> Nombre: ${contacto.name}</h2>
+                <h2> Apellido: ${contacto.lastname}</h2>
                 <p>
                     <strong>ID:</strong>
                     <span>${contacto.id}</span>
