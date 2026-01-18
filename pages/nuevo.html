@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/nuevo.css">
+    <title>Nuevo Contacto</title>
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="contacto.html" class="nav-link">Contactos</a>
+            <a href="favorito.html" class="nav-link">Favoritos</a>
+            <a href="lista.html" class="nav-link">ToDo List</a>
+            <a href="perfil.html" class="nav-link">Perfil</a>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <h1>Agregar Nuevo Contacto</h1>
+        
+        <form id="nuevoContactoForm" class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan">
+            </div>
+            
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required placeholder="Ej: Pérez">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Ej: juan.perez@gmail.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +502 1234-5678">
+            </div>
+            
+            <div class="form-group">
+                <label for="direccion">Dirección (opcional):</label>
+                <textarea id="direccion" name="direccion" rows="3" placeholder="Ej: Ciudad, Zona, Calle"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="notas">Notas adicionales (opcional):</label>
+                <textarea id="notas" name="notas" rows="3" placeholder="Información adicional sobre el contacto"></textarea>
+            </div>
+            
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-primary">Guardar Contacto</button>
+                <a href="contacto.html" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+        
+        <div class="form-note">
+            <p><strong>Nota:</strong> Este formulario no es funcional.</p>
+        </div>
+    </div>
+</body>
+
+</html>
