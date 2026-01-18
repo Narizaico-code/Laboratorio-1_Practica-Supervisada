@@ -1,6 +1,9 @@
 body{
     background-color: antiquewhite;
     font-family: "Google Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
 .login {
@@ -19,6 +22,10 @@ body{
 
 .login h1{
     text-align: center;
+    margin: 0 0 1.5rem 0;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .login input{
@@ -29,17 +36,105 @@ body{
     width: 100%;
     box-sizing: border-box;
     text-align: center;
+    font-family: "Google Sans", sans-serif;
+    font-size: 0.95rem;
+}
+
+.login input:focus {
+    outline: 2px solid antiquewhite;
+    border-color: antiquewhite;
 }
 
 .login button{
     margin-top: 0.5rem;
     padding: 0.5rem;
-    border: 0.1rem solid #353333;
+    border: 0.1rem solid #b3b3b3;
     border-radius: 0.5rem;
     width: 100%;
     background-color: #e9e8e2;
-    color: white;
+    color: rgb(68, 68, 68);
     font-weight: bold;
     cursor: pointer;
+    font-size: 0.8rem;
+}
 
+.login button:hover {
+    background-color: #dadbdd;
+}
+
+.login button:focus {
+    outline-offset: 2px;
+}
+
+.login label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .login {
+        width: 14rem;
+        padding: 1.8rem;
+    }
+    
+    .login h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .login input {
+        padding: 0.45rem;
+        font-size: 0.9rem;
+    }
+    
+    .login button {
+        padding: 0.45rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login {
+        width: 13rem;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .login h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .login input {
+        padding: 0.4rem;
+        font-size: 0.85rem;
+    }
+    
+    .login button {
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+    
+    .login label {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .login {
+        width: 12rem;
+        padding: 1.2rem;
+    }
+    
+    .login h1 {
+        font-size: 1.2rem;
+    }
+    
+    .login input, 
+    .login button {
+        padding: 0.35rem;
+    }
 }
