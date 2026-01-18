@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/favorito.css">
+    <script src="../javascript/favorito.js" defer></script>
+    <title>Contactos Favoritos</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="contacto.html" class="nav-link">Contactos</a>
+            <a href="favorito.html" class="nav-link active">Favoritos</a>
+            <a href="lista.html" class="nav-link">ToDo List</a>
+            <a href="perfil.html" class="nav-link">Perfil</a>
+        </div>
+    </nav>
+
+    <h1>Contactos Favoritos</h1>
+    
+    <div class="favoritos">
+        <div class="contacto favorito4" id="favorito4" role="button">
+            <div class="favorite-icon">★</div>
+            <img src="../images/contacto4.jpeg" alt="Kevin Ramirez">
+            <div class="info">
+                <label class="nombre">Kevin</label>
+                <label class="apellido">Ramirez</label>
+                <label class="correo">kevin.ramirez@gmail.com</label>
+                <label class="telefono">+502 1234-2453</label>
+            </div>
+        </div>
+        
+        <div class="contacto favorito5" id="favorito5" role="button">
+            <div class="favorite-icon">★</div>
+            <img src="../images/contacto5.jpeg" alt="Mon Laferte">
+            <div class="info">
+                <label class="nombre">Norma Monserrat</label>
+                <label class="apellido">Bustamante Laferte</label>
+                <label class="correo">monlaferte@gmail.com</label>
+                <label class="telefono">+502 7841-4521</label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="empty-state">
+        <p>✨ Solo tienes 2 contactos favoritos. Agrega más desde la página de contactos.</p>
+    </div>
+</body>
+</html>
