@@ -52,6 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
     volverBtn.addEventListener('click', () => {
         // Limpiar localStorage si es necesario
         localStorage.removeItem('contactoSeleccionado');
-        window.location.href = '../pages/contacto.html';
+        window.history.back();
     });
 });
