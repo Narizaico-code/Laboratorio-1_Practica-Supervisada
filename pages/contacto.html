@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/contacto.css">
+    <script src="../javascript/contacto.js" defer></script>
+    <title>Contactos</title>
 </head>
+
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="contactos.html" class="nav-link">Contactos</a>
+            <a href="favorito.html" class="nav-link">Favoritos</a>
+            <a href="lista.html" class="nav-link">ToDo List</a>
+            <a href="perfil.html" class="nav-link">Perfil</a>
+        </div>
+    </nav>
+
+    <h1>Contactos</h1>
     
+    <div class="add-contact-container">
+        <a href="nuevo.html" class="add-contact-btn">
+            + Agregar Nuevo Contacto
+        </a>
+    </div>
+
+    <div class="contactos">
+        <div class="contacto contacto1" id="contacto1" role="button">
+            <img src="../images/contacto1.jpeg" alt="imagencontacto1">
+            <div class="info">
+                <label id="name" class="nombre">Homelo pelo</label>
+                <label id="lastname" class="apellido">Chino</label>
+                <label id="email" class="correo">homelo.chino@gmail.com</label>
+                <label id="telefono">+502 1234-5678</label>
+            </div>
+        </div>
+        <div class="contacto contacto2" id="contacto2" role="button">
+            <img src="../images/contacto2.jpeg" alt="imagencontacto2">
+            <div class="info">
+                <label id="name" class="nombre">Marge</label>
+                <label id="lastname" class="apellido">Simpson</label>
+                <label id="email" class="correo">marge.simpson@gmail.com</label>
+                <label id="telefono">+502 9876-5432</label>
+            </div>
+        </div>
+        <div class="contacto contacto3" id="contacto3" role="button">
+            <img src="../images/contacto3.jpeg" alt="imagencontacto3">
+            <div class="info">
+                <label id="name" class="nombre">Bart</label>
+                <label id="lastname" class="apellido">Simpson</label>
+                <label id="email" class="correo">bart.simpson@gmail.com</label>
+                <label id="telefono">+502 3953-9236</label>
+            </div>
+        </div>
+        <div class="contacto contacto4" id="contacto4" role="button">
+            <img src="../images/contacto4.jpeg" alt="imagencontacto4">
+            <div class="info">
+                <label id="name" class="nombre">Kevin</label>
+                <label id="lastname" class="apellido">Ramirez</label>
+                <label id="email" class="correo">kevin.ramirez@gmail.com</label>
+                <label id="telefono">+502 1234-2453</label>
+            </div>
+        </div>
+        <div class="contacto contacto5" id="contacto5" role="button">
+            <img src="../images/contacto5.jpeg" alt="imagencontacto5">
+            <div class="info">
+                <label id="name" class="nombre">Norma Monserrat</label>
+                <label id="lastname" class="apellido">Bustamante Laferte</label>
+                <label id="email" class="correo">monlaferte@gmail.com</label>
+                <label id="telefono">+502 7841-4521</label>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
