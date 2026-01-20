@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/lista.css">
+    <title>Lista</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="contacto.html" class="nav-link">Contactos</a>
+            <a href="favorito.html" class="nav-link">Favoritos</a>
+            <a href="lista.html" class="nav-link active">ToDo List</a>
+            <a href="perfil.html" class="nav-link">Perfil</a>
+        </div>
+    </nav>
+
+    <div class="todo-container">
+        <h1>📝 ToDo List</h1>
+        <p class="subtitle">Organiza tus tareas pendientes</p>
+        
+        <div class="todo-form-container">
+            <form id="todoForm" class="todo-form">
+                <h3 id="formTitle">➕ Agregar Nueva Tarea</h3>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="taskTitle">Título:</label>
+                        <input type="text" id="taskTitle" name="taskTitle" required 
+                               placeholder="Ej: Comprar víveres" maxlength="50">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="taskDate">Fecha:</label>
+                        <input type="date" id="taskDate" name="taskDate" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="taskDescription">Descripción:</label>
+                    <textarea id="taskDescription" name="taskDescription" rows="3" 
+                              placeholder="Detalles de la tarea..." maxlength="200"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="taskPriority">Prioridad:</label>
+                    <div class="priority-options">
+                        <label class="priority-option">
+                            <input type="radio" name="taskPriority" value="baja" checked>
+                            <span class="priority-badge baja">Baja</span>
+                        </label>
+                        <label class="priority-option">
+                            <input type="radio" name="taskPriority" value="media">
+                            <span class="priority-badge media">Media</span>
+                        </label>
+                        <label class="priority-option">
+                            <input type="radio" name="taskPriority" value="alta">
+                            <span class="priority-badge alta">Alta</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" id="submitBtn" class="btn btn-primary">Agregar Tarea</button>
+                    <button type="button" id="cancelBtn" class="btn btn-secondary" style="display: none;">Cancelar Edición</button>
+                    <button type="button" id="clearAllBtn" class="btn btn-danger">Limpiar Todo</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="todo-controls">
+            <div class="stats">
+                <span class="stat-item">Total: <strong id="totalTasks">0</strong></span>
+                <span class="stat-item">Pendientes: <strong id="pendingTasks">0</strong></span>
+                <span class="stat-item">Completadas: <strong id="completedTasks">0</strong></span>
+            </div>
+            
+            <div class="filters">
+                <label for="filterPriority">Filtrar por prioridad:</label>
+                <select id="filterPriority">
+                    <option value="todas">Todas</option>
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+                
+                <button id="sortPriorityBtn" class="btn btn-small">Ordenar por Prioridad</button>
+            </div>
+        </div>
+        
+        <div class="tasks-container">
+            <h3>📋 Mis Tareas</h3>
+            <div id="tasksList" class="tasks-list">
+                <div class="empty-state">
+                    <p>🎉 No tienes tareas pendientes. ¡Agrega una nueva!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h4>💡 Instrucciones:</h4>
+            <ul>
+                <li>Haz clic en una tarea para marcarla como completada</li>
+                <li>Usa los botones ✏️ para editar y 🗑️ para eliminar</li>
+                <li>Las tareas se guardan automáticamente</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="../javascript/lista.js"></script>
+</body>
+</html>
