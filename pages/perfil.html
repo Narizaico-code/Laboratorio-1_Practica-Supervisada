@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/perfil.css">
+    <title>Mi Perfil</title>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="contactos.html" class="nav-link">Contactos</a>
+            <a href="favorito.html" class="nav-link">Favoritos</a>
+            <a href="lista.html" class="nav-link">ToDo List</a>
+            <a href="perfil.html" class="nav-link active">Perfil</a>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <h1>Mi Perfil</h1>
+        
+        <div class="profile-header">
+            <div class="profile-image-container">
+                <img src="../images/perfil.png" alt="Foto de perfil" class="profile-image" id="profileImage">
+                <div class="image-overlay">
+                    <span>✏️ Cambiar</span>
+                </div>
+            </div>
+            <div class="profile-info">
+                <h2 id="profileName">Carlos Rodríguez</h2>
+                <p class="profile-email" id="userEmail">carlos.rodriguez@example.com</p>
+                <p class="profile-role">Usuario Premium</p>
+            </div>
+        </div>
+        
+        <div class="profile-details">
+            <h3>Información Personal</h3>
+            
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Nombre completo:</span>
+                    <span class="detail-value" id="fullName">Carlos Andrés Rodríguez Martínez</span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="detail-label">Teléfono:</span>
+                    <span class="detail-value" id="profilePhone">+502 5555-1234</span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="detail-label">Fecha de nacimiento:</span>
+                    <span class="detail-value">15 de marzo de 1990</span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="detail-label">Dirección:</span>
+                    <span class="detail-value">Ciudad de Guatemala, Zona 10</span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="detail-label">Profesión:</span>
+                    <span class="detail-value">Ingeniero en Sistemas</span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="detail-label">Empresa:</span>
+                    <span class="detail-value">Tech Solutions S.A.</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="account-details">
+            <h3>Información de la Cuenta</h3>
+            
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Miembro desde:</span>
+                    <span class="detail-value">Enero 2023</span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="detail-label">Tipo de cuenta:</span>
+                    <span class="detail-value premium">Premium</span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="detail-label">Contactos guardados:</span>
+                    <span class="detail-value">25</span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="detail-label">Favoritos:</span>
+                    <span class="detail-value">2</span>
+                </div>
+                
+                <div class="detail-item">
+                    <span class="detail-label">Tareas pendientes:</span>
+                    <span class="detail-value">3</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-actions">
+            <button class="btn btn-primary" id="editProfile">Editar Perfil</button>
+            <button class="btn btn-secondary" id="logoutBtn">Cerrar Sesión</button>
+        </div>
+    </div>
+    
+    <script src="../javascript/perfil.js"></script>
+</body>
+</html>
